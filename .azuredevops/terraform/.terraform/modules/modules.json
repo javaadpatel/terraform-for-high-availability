@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"app_service","Source":"./modules/azure-app-service","Dir":"modules/azure-app-service"},{"Key":"cosmosdb","Source":"./modules/azure-cosmosdb","Dir":"modules/azure-cosmosdb"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"app_service","Source":"./modules/azure-app-service","Dir":"modules/azure-app-service"},{"Key":"cosmosdb","Source":"./modules/azure-cosmosdb","Dir":"modules/azure-cosmosdb"},{"Key":"traffic_manager","Source":"./modules/azure-traffic-manager","Dir":"modules/azure-traffic-manager"}]}

@@ -20,9 +20,7 @@ resource "azurerm_cosmosdb_account" "db" {
   }
 
   consistency_policy {
-    consistency_level       = "BoundedStaleness"
-    max_interval_in_seconds = 10
-    max_staleness_prefix    = 200
+    consistency_level = "Eventual"
   }
 
   geo_location {
@@ -34,4 +32,9 @@ resource "azurerm_cosmosdb_account" "db" {
     location          = var.primary_location
     failover_priority = 0
   }
+}
+
+output "endpoint" {
+  value     = azurerm_cosmosdb_account.db.endpoint
+  sensitive = false
 }
